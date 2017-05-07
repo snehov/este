@@ -15,13 +15,17 @@
         "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
         "headers" : [{
           "key" : "Access-Control-Allow-Origin",
-          "value" : "*"
+          "value" : "*",
+          "APIKey": "bS5FrVDUtcynCoPXNTawFpwpmUFZPewbFQfHr0I4IAhU",
+          "Content-Type" : "application/json"              
         }]
       }, {
         "source" : "**/*.@(jpg|jpeg|gif|png)",
         "headers" : [{
           "key" : "Cache-Control",
-          "value" : "max-age=7200"
+          "value" : "max-age=7200",
+          "APIKey": "bS5FrVDUtcynCoPXNTawFpwpmUFZPewbFQfHr0I4IAhU",
+          "Content-Type" : "application/json"   
         }]
       }
     ],

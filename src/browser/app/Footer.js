@@ -20,12 +20,9 @@ const Footer = () => (
     paddingVertical={1}
   >
     <Text size={-1}>
-      <FormattedMessage {...messages.madeByHtml} />
+      Patička
     </Text>
-    {'\u00a0'}
-    <Link size={-1} to="https://twitter.com/steida">
-      steida
-    </Link>
+  
   </Box>
 );
 

@@ -54,7 +54,7 @@ export default [
   },
   {
     "id": "app.links.fields",
-    "defaultMessage": "Fields",
+    "defaultMessage": "Vytvořit event",
   },
   {
     "id": "app.links.home",
@@ -66,7 +66,7 @@ export default [
   },
   {
     "id": "app.links.me",
-    "defaultMessage": "Já",
+    "defaultMessage": "Můj profil",
   },
   {
     "id": "app.links.notFound",
@@ -90,11 +90,23 @@ export default [
   },
   {
     "id": "app.links.todos",
-    "defaultMessage": "Úkoly",
+    "defaultMessage": "Seznam eventů",
   },
   {
     "id": "app.links.users",
     "defaultMessage": "Uživatelé",
+  },
+  {
+    "id": "app.links.allEvents",
+    "defaultMessage": "Všechny eventy",
+  },
+  {
+    "id": "app.links.futureEvents",
+    "defaultMessage": "Budoucí eventy",
+  },
+  {
+    "id": "app.links.pastEvents",
+    "defaultMessage": "Předchozí eventy",
   },
   {
     "id": "auth.email.emailLegend",

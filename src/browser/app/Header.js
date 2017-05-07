@@ -31,6 +31,7 @@ type HeaderProps = {
 };
 
 const Header = ({ viewer }: HeaderProps) => (
+        
   <Box
     backgroundColor="primary"
     flexWrap="wrap"
@@ -38,13 +39,13 @@ const Header = ({ viewer }: HeaderProps) => (
     marginVertical={0.5}
     paddingHorizontal={0.5}
   >
-    <HeaderLink exact to="/" message={linksMessages.home} />
-    <HeaderLink to="/users" message={linksMessages.users} />
-    <HeaderLink to="/todos" message={linksMessages.todos} />
-    <HeaderLink to="/fields" message={linksMessages.fields} />
-    <HeaderLink to="/intl" message={linksMessages.intl} />
-    <HeaderLink to="/offline" message={linksMessages.offline} />
-    <HeaderLink to="/me" message={linksMessages.me} />
+    { JSON.stringify(viewer)}
+    {!viewer &&<HeaderLink exact to="/" message={linksMessages.home} />}
+    
+    {viewer && <HeaderLink to="/events" message={linksMessages.todos} />}
+    {viewer && <HeaderLink to="/newevent" message={linksMessages.fields} />}
+    {viewer && <HeaderLink to="/intl" message={linksMessages.intl} />}
+    {viewer && <HeaderLink to="/me" message={linksMessages.me} />}
     {!viewer && <HeaderLink to="/signin" message={linksMessages.signIn} />}
   </Box>
 );

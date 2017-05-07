@@ -34,7 +34,7 @@ type TodosProps = {
   todos: Object,
   toggleTodoCompleted: typeof toggleTodoCompleted,
 };
-const Todos = (
+const Events = (
   {
     deleteTodo,
     intl,
@@ -80,4 +80,4 @@ export default compose(
     { deleteTodo, toggleTodoCompleted },
   ),
   injectIntl,
-)(Todos);
+)(Events);

@@ -11,6 +11,11 @@ import {
   defineMessages,
 } from 'react-intl';
 import { Title } from '../components';
+//import axios from 'axios';
+import MyAuth, {passwordLogin} from '../auth/MyAuth';
+
+//import type, { User } from '../../common/types';
+//import createUserFirebase from '../users/createUserFirebase';
 
 const messages = defineMessages({
   unreadCount: {
@@ -27,36 +32,29 @@ const IntlPage = () => {
   const unreadCount = 123;
 
   return (
-    <Box>
+    <Box>mujLogin: {passwordLogin("brucebanner@strv.com", "kill3r", loginCallback)}
       <Title message={linksMessages.intl} />
       <PageHeader heading="react-intl" />
       <SwitchLocale />
-      <Paragraph>
-        <FormattedDate
-          day="numeric"
-          month="short"
-          value={renderedAt}
-          year="numeric"
-        />
-      </Paragraph>
-      <Paragraph flexDirection="row">
-        <FormattedNumber value={unreadCount}>
-          {message => <Text>{message}</Text>}
-        </FormattedNumber>
-        &nbsp;
-        <FormattedMessage {...messages.unreadCount} values={{ unreadCount }}>
-          {message => <Text>{message}</Text>}
-        </FormattedMessage>
-      </Paragraph>
-      <Paragraph>
-        <FormattedRelative
-          initialNow={renderedAt}
-          updateInterval={1000 * 1}
-          value={renderedAt}
-        />
-      </Paragraph>
+      
     </Box>
   );
 };
+
+
+
+
+  
+
+
+function loginCallback(data){
+    console.log('callback from int',data);
+    const user=  {
+        displayName: data.displayName ,
+        email: data.email,
+        id: data.id,
+        photoURL: data.photoURL || ''
+      };
+}
 
 export default IntlPage;

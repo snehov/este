@@ -156,7 +156,9 @@ const signInEpic = (action$: any, { FBSDK, firebaseAuth, validate }: Deps) => {
         return nativeSignIn('facebook');
       }
       if (providerName === 'password') {
-        return signInWithEmailAndPassword(options);
+        let signRes = signInWithEmailAndPassword(options);
+        console.log("### sign res: ",signRes);
+        return signRes;
       }
       // TODO: Add more providers.
       invariant(

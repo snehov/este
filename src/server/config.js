@@ -18,14 +18,22 @@ nconf.defaults({
   defaultLocale: 'en',
   firebase: {
     // To get the config, just click Add web app from the overview page.
-    apiKey: 'AIzaSyDZRAOrDErAaC-TCKbr4cMzaohsPR4sWgU',
+    
+        apiKey: 'AIzaSyDZRAOrDErAaC-TCKbr4cMzaohsPR4sWgU',
     authDomain: 'este.firebaseapp.com',
     databaseURL: 'https://este.firebaseio.com',
     storageBucket: 'project-808488257248094054.appspot.com',
+    
+   /*
+    "apiKey": "bS5FrVDUtcynCoPXNTawFpwpmUFZPewbFQfHr0I4IAhU",
+    "authDomain": "reactcontest-api.strv.com",
+    "databaseURL": "https://reactcontest-api.strv.com",
+    "storageBucket": "https://reactcontest-api.strv.com/auth/native"
+    */
   },
   googleAnalyticsId: 'UA-XXXXXXX-X',
   isProduction: process.env.NODE_ENV === 'production',
-  locales: ['cs', 'de', 'en', 'es', 'fr', 'pt', 'ro'],
+  locales: ['cs', 'en'],
   port: process.env.PORT || 3000,
   // Enable hot reload on remote device. Note it prevents offline testing,
   // because it depends on ip.address(), which doesn't work with disabled wifi.

@@ -50,7 +50,7 @@ export default [
   },
   {
     "id": "app.links.fields",
-    "defaultMessage": "Fields",
+    "defaultMessage": "Create event",
   },
   {
     "id": "app.links.home",
@@ -62,7 +62,7 @@ export default [
   },
   {
     "id": "app.links.me",
-    "defaultMessage": "Me",
+    "defaultMessage": "My profile",
   },
   {
     "id": "app.links.notFound",
@@ -86,11 +86,23 @@ export default [
   },
   {
     "id": "app.links.todos",
-    "defaultMessage": "Todos",
+    "defaultMessage": "Events list",
   },
   {
     "id": "app.links.users",
     "defaultMessage": "Users",
+  },
+  {
+    "id": "app.links.allEvents",
+    "defaultMessage": "All events",
+  },
+  {
+    "id": "app.links.futureEvents",
+    "defaultMessage": "Future events",
+  },
+  {
+    "id": "app.links.pastEvents",
+    "defaultMessage": "Past events",
   },
   {
     "id": "auth.email.emailLegend",

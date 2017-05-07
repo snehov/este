@@ -46,6 +46,18 @@ const LinkMessages = defineMessages({
     defaultMessage: 'Todos',
     id: 'app.links.todos',
   },
+  allEvents: {
+    defaultMessage: 'All events',
+    id: 'app.links.allEvents',
+  },
+  futureEvents: {
+    defaultMessage: 'Future events',
+    id: 'app.links.futureEvents',
+  },
+  pastEvents: {
+    defaultMessage: 'Past events',
+    id: 'app.links.pastEvents',
+  },
 });
 
 export default LinkMessages;

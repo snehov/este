@@ -102,6 +102,7 @@ class Email extends React.Component {
 
   signInViaPassword() {
     const { fields, signIn } = this.props;
+    console.log("signInViaPassword",fields.$values());
     signIn('password', fields.$values());
   }
 
